@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Car Store Landing Page Demo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Max Car Demo </h1>
+      <div class="hamburgerMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <nav>
+      <div class="container">
+        <ul>
+          <li>
+            <a href="#">About Us</a>
+          </li>
+          <li>
+            <a href="#">Deals</a>
+          </li>
+          <li>
+            <a href="#">Exclusive</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <div id="imgSlick">
+    <img src="./images/carro-bmw.png" alt="bmw-Z4">
+    <img src="./images/fusca.png" alt="VW-oldBeetle">
+    <img src="images/moto-bmw.png" alt="bmw-motorcycle">
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('#imgSlick').slick({
+        autoplay
+      });
+      })
+  </script>
+  <script src="main.js"></script>
+</body>
+</html>
