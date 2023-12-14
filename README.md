@@ -1,31 +1,42 @@
-# Under Production do not consider Numeric Grade Tracker
+# Demo Car Store Landing Page
 
-A JavaScript-based grade tracker that helps you keep track of your grades for various activities.
+This is a responsive landing page for our product. It includes a navigation menu, a list of vehicles, and a contact form.
 
-## Functionality
+## Features
 
-- Add an activity along with its grade.
-- The application calculates the final average grade.
-- Visual feedback (emoji) is provided for each activity based on whether the grade is above or below the minimum grade.
-- The application prevents the addition of duplicate activities.
+- Responsive design that looks good on desktop
+- Hamburger menu that slides down and up
+- Smooth scrolling and the form pre-fills the "Interest" field with the name of the vehicle when a button in the vehicle list is clicked.
+- Form validation for the contact form
+- Phone number input field with a mask
 
-## Usage
+## Technologies Used
 
-1. Load the HTML file in your preferred web browser.
-2. You will be prompted to enter the minimum passing grade.
-3. Input the name and grade of each activity.
-4. The application will automatically update the table and the final average grade.
+- HTML
+- CSS
+- JavaScript
+- jQuery
+- jQuery Validation Plugin
+- jQuery Mask Plugin
+
+## How to Use
+
+1. Navigate to the URL where the landing page is hosted `Vercel`.
+2. Click the hamburger menu to open the navigation menu.
+3. Click a link in the menu to scroll to the corresponding section of the page.
+4. Click on button "I am interested" in the vehicle list to auto fill with the vehicle name and scroll to the form.
+5. Fill out the contact form and submit it. You will see an alert if the form is valid or invalid.
 
 ## Deployment
 
-The application is deployed and can be accessed at [https://contacts-agenda.vercel.app/](https://contacts-agenda.vercel.app/)
+The application is deployed and can be accessed at [https://landing-page-car-store-demo.vercel.app/](https://landing-page-car-store-demo.vercel.app/)
 
-## Cloning the Repository and Running the Application Locally
+## Running the Page Locally
 
-To clone the repository, use the following command in your terminal:
+Use the following command in your terminal:
 
 ```bash
-git clone <https://github.com/maxh33/project_brazilian_grade_calculator>
+git clone <https://github.com/maxh33/landing-page-car-store-demo>
 ```
 After cloning the repository, open Visual Studio Code.
 Use the `File -> Open Folder` menu item to navigate to the cloned repository and open it.
@@ -39,3 +50,9 @@ For a better experience when running the application on your local machine, you 
 
 **Important**
 This application does not have data persistence. Refreshing the page will result in loss of all data.
+
+## Future Improvements
+
+- Add more sections to the page
+- Improve the design of the form
+- Add more validation rules to the form

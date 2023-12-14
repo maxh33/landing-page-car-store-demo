@@ -5,31 +5,40 @@
     font-family: 'Roboto', sans-serif;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 .container {
     max-width: 1024px;
     margin: 0 auto;
-    max-width: 100%;
+    width: 100%;
 }
 
-header {
-    background-color: #274ecddc;
+header , footer {
+    background-color: #132972dc;
     color: #fff;
     padding-top: 16px;
 }
 
-header > .container {
-    display: flex;
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+header > .container,
+footer > .container {
     justify-content: space-between;
     align-items: center;
     padding-bottom: 16px;
 }
 
 nav {
-    background-color: #2a6eeb;
+    background-color: #235dc9;
     padding: 16px 0;
-    display: flex;
-    justify-content: center;
-    border-bottom: 16px solid #211f97;
+    display: none;
 }
 
 nav li {
@@ -47,6 +56,7 @@ nav li a {
 }
 .hamburgerMenu {
     width: 32px;
+    cursor: pointer;
 }
 
 .hamburgerMenu span {
@@ -57,3 +67,109 @@ nav li a {
     margin-bottom: 4px;
 }
 
+.containerFlex {
+    display: flex;
+}
+
+#aboutStore img {
+    max-width: 400px;
+    margin-right: 24px;
+} 
+
+section {
+    padding: 48px 0;
+}
+
+section h2 {
+    margin-bottom: 16px;
+}
+
+.vehicleList {
+    flex-wrap: wrap;
+}
+
+.vehicleList li {
+    list-style: none;
+    max-width: 30%;
+    margin-bottom: 24px;
+}
+
+.vehicleList li img {
+    max-width: 100%;
+    width: 400px;
+    height: 200px;
+}
+
+.vehicleList li h3 {
+    margin: 16px 0;
+}
+
+.centralItem {
+    margin: 0 5%;
+}
+
+button {
+    background-color: #235dc9;
+    color: #fff;
+    width: 100%;
+    border: none;
+    display: block;
+    padding: 8px 0px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    border-radius: 6px;
+}
+
+.price{
+    font-size: 18px;
+    font-weight: bold;
+    margin: 16px 0;
+    display: block;
+}
+
+.price del {
+    color: #ccc;
+    font-size: 14px;
+}
+
+.contactField {
+    margin-bottom: 16px;
+}
+
+.contactField label {
+    display: block;
+    font-weight: bold;
+}
+
+.contactField input,
+.contactField textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    display: block;
+}
+
+.contactField textarea {
+    resize: none;
+    height: 120px;
+}
+
+form {
+    max-width: 360px;
+}
+
+form button {
+    max-width: 120px;
+}
+
+footer li {
+    list-style: none;
+    margin-left: 16px;
+}
+
+footer li img {
+    height: 32px;
+}
