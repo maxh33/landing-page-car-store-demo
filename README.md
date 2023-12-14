@@ -1,6 +1,6 @@
 # Demo Car Store Landing Page
 
-This is a responsive landing page for our product. It includes a navigation menu, a list of vehicles, and a contact form.
+This is a responsive landing page for car dealers. It includes a navigation menu, a list of vehicles, and a contact form.
 
 ## Features
 
