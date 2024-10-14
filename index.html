@@ -1,255 +1,93 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Car Store Landing Page Demo</title>
+  <title>AutoMax Veículos</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
 </head>
 <body>
   <header>
-    <div class="container containerFlex">
-      <h1>Max Car Demo </h1>
-      <div class="hamburgerMenu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </div>
-    <nav>
-      <div class="container">
+    <div class="container">
+      <h1>AutoMax Veículos</h1>
+      <nav>
         <ul>
           <li>
-            <a href="#aboutStore">About Us</a>
+            <a href="#sobre-a-loja">Sobre a loja</a>
           </li>
           <li>
-            <a href="#exclusive">Exclusive</a>
-          </li>
-          <li>
-            <a href="#deals">Deals</a>
-          </li>
-          <li>
-            <a href="#contactForm">Contact</a>
+            <a href="#veiculos">Veículos</a>
           </li>
         </ul>
-      </div>
-    </nav>
+      </nav>
+    </div>
   </header>
-  <div id="imgSlick">
-    <img src="./images/slide1.png" alt="porsche-911">
-    <img src="./images/slide2.png" alt="bmw-x5">
-    <img src="./images/slide3.png" alt="ford-gt">
-  </div>
-  <section id="aboutStore">
-      <div class="container containerFlex">
-        <img src="./images/loja.jpg" alt="storePhoto">
-        <div>
-          <h2>About Max Car</h2>
+
+  <main>
+    <section id="sobre-a-loja">
+      <div class="container">
+        <img src="./images/loja.jpg" alt="Interior da concessionária">
+        <div class="sobre-conteudo">
+          <h2>Sobre a AutoMax</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint harum nulla in ullam nesciunt eaque iste officiis tempore dolorum dolor rerum doloremque non, fugiat, sapiente maxime optio, voluptatibus asperiores placeat.
+            A AutoMax é sua concessionária de confiança, oferecendo uma ampla seleção de veículos novos e seminovos de alta qualidade. Nossa equipe experiente está pronta para ajudá-lo a encontrar o carro perfeito para suas necessidades.
           </p>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint harum nulla in ullam nesciunt eaque iste officiis tempore dolorum dolor rerum doloremque non, fugiat, sapiente maxime optio, voluptatibus asperiores placeat.
+            Com mais de 20 anos no mercado, garantimos o melhor atendimento e as melhores condições para que você saia dirigindo o carro dos seus sonhos.
           </p>
         </div>
       </div>
-  </section>
+    </section>
 
-  <section class="vehicleList">
-    <div class="container">
-      <h2 id="exclusive" >Exclusive</h2>
-      <ul class="containerFlex vehicleList">
-        <li>
-          <img src="./images/carro-bmw.png" alt="bmw-Z4">
-          <h3>BMW Z4</h3>
-          <p>
-            Automatic transmission, 2.0L engine, 4 cylinders, 197 hp, 0-100 km / h in 6.6 seconds, 240 km / h top speed, 18 "alloy wheels, 8.8" multimedia sc
-          </p>
-          <div class="price">
-            <strong>$ 25.000,00</strong>
-          </div>
-          <button type="button">I am interested</button>
-        </li>
-        <li class="centralItem">
-          <img src="./images/porsche-carrera-gt.png" alt="porsche-carrera-gt">
-          <h3>Porsche Carrera GT</h3>
-          <p>
-            5.7L V10 engine, 612 hp, 0-100 km / h in 3.9 seconds, 330 km / h top speed, 19 "alloy wheels, 5.8" multimedia screen, 6-speed manual transmission
-          </p>
-          <div class="price">
-            <strong>$ 55.000,00</strong>
-          </div>
-          <button type="button">I am interested</button>
-        </li>
-        <li>
-          <img src="./images/ford-gt.jpg" alt="ford-gt">
-          <h3>Ford GT</h3>
-          <p>
-            3.5L V6 engine, 647 hp, 0-100 km / h in 3.2 seconds, 347 km / h top speed, 20 "alloy wheels, 10" multimedia screen, 7-speed automatic transmission
-          </p>
-          <div class="price">
-            <strong>$ 35.000,00</strong>
-          </div>
-          <button type="button">I am interested</button>
-        </li>
-        <li>
-          <img src="./images/aston-martin-virage.jpg" alt="aston-martin-virage">
-          <h3>Aston Martin Virage</h3>
-          <p>
-            6.0L V12 engine, 490 hp, 0-100 km / h in 4.6 seconds, 300 km / h top speed, 20 "alloy wheels, 6.5" multimedia screen, 6-speed automatic transmission
-          </p>
-          <div class="price">
-            <strong>$ 50.000,00</strong>
-          </div>
-          <button type="button">I am interested</button>
-        </li>
-        <li class="centralItem">
-          <img src="./images/bmw-m4.jpg" alt="bmw-m4">
-          <h3>BMW M4</h3>
-          <p>
-            3.0L engine, 6 cylinders, 431 hp, 0-100 km / h in 4.1 seconds, 250 km / h top speed, 19 "alloy wheels, 8.8" multimedia screen, 7-speed automatic transmission
-          </p>
-          <div class="price">
-            <strong>$ 30.000,00</strong>
-          </div>
-          <button type="button">I am interested</button>
-        </li>
-
-      </ul>
-    </div>
-  </section>
-
-  <section class="vehicleList">
-    <div class="container">
-      <h2 id="deals">Deals</h2>
-      <ul class="containerFlex vehicleList">
-        <li>
-          <img src="./images/classic-camaro.jpg" alt="classic-camaro">
-          <h3>Classic Camaro</h3>
-          <p>
-            6.0L V8 engine, 461 hp, 0-100 km / h in 4.2 seconds, 290 km / h top speed, 20 "alloy wheels, 8.8" multimedia screen, 7-speed automatic transmission
-          </p>
-          <div class="price">
-            <del>$ 25.000,00</del>
-            <strong>$ 20.000,00</strong>
-          </div>
-          <button type="button">I am interested</button>
-        </li>
-        <li class="centralItem">
-          <img src="./images/moto-bmw.png" alt="bmw-k1300s">
-          <h3>BMW K1300S</h3>
-          <p>
-            1.3L engine, 4 cylinders, 175 hp, 0-100 km / h in 2.8 seconds, 280 km / h top speed, 17 "alloy wheels, 8.8" multimedia screen, 7-speed automatic transmission
-          </p>
-          <div class="price">
-            <del>$ 15.000,00</del>
-            <strong>$ 10.000,00</strong>
-          </div>
-          <button type="button">I am interested</button>
-        </li>
-        <li>
-          <img src="./images/nissan-frontier.jpg" alt="nissan-frontier">
-          <h3>Nissan Frontier</h3>
-          <p>
-            2.3L engine, 4 cylinders, 190 hp, 0-100 km / h in 10.5 seconds, 180 km / h top speed, 18 "alloy wheels, 8.8" multimedia screen, 7-speed automatic transmission
-          </p>
-          <div class="price">
-            <del>$ 25.000,00</del>
-            <strong>$ 20.000,00</strong>
-          </div>
-          <button type="button">I am interested</button>
-        </li>
-        <li>
-          <img src="./images/fusca.png" alt="VW-classic-beetle">
-          <h3>VW Classic Beetle</h3>
-          <p>
-            1.3L engine, 4 cylinders, 50 hp, 0-100 km / h in 10.5 seconds, 120 km / h top speed, 18 "alloy wheels, 8.8" multimedia screen, 7-speed automatic transmission
-          </p>
-          <div class="price">
-            <del>$ 10.000,00</del>
-            <strong>$ 5.000,00</strong>
-          </div>
-          <button type="button">I am interested</button>
-        </li>
-        <li class="centralItem">
-          <img src="./images/honda-s2000.jpg" alt="honda-s2000">
-          <h3>Honda S2000</h3>
-          <p>
-            2.0L engine, 4 cylinders, 240 hp, 0-100 km / h in 5.8 seconds, 240 km / h top speed, 18 "alloy wheels, 8.8" multimedia screen, 7-speed automatic transmission
-          </p>
-          <div class="price">
-            <del>$ 18.000,00</del>
-            <strong>$ 13.000,00</strong>
-          </div>
-          <button type="button">I am interested</button>
-        </li>
-      </ul>
-    </div>
-  </section>
-
-  <section id="contactForm">
-    <div class="container">
-      <h2>Contact</h2>
-      <form>
-          <div class="contactField">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name">
-          </div>
-          <div class="contactField">
-            <label for="phone">Phone</label>
-            <input type="tel" id="phone" name="phone">
-          </div>
-          <div class="contactField">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email">
-          </div>
-          <div class="contactField">
-            <label for="gotInterest">Interested Model</label>
-            <input type="text" id="gotInterest" name="gotInterest">
-          </div>
-          <div class="contactField">
-            <label for="message">Message</label>
-            <textarea name="message" id="message"></textarea>
-          </div>
-          <button type="submit">Send</button>
-      </form>
-    </div>
-  </section>
-  <footer>
-    <div class="container containerFlex">
-      <p>
-        &copy; 2023 Max Car Demo | All Rights Reserved.
-      </p>
-      <ul class="containerFlex">
-        <li>
-          <a href="#">
-            <img src="./icones/facebook.png" alt="facebook">
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <img src="./icones/instagram.png" alt="instagram">
-          </a>
+    <section id="veiculos">
+      <div class="container">
+        <h2>Nossos Veículos</h2>
+        <ul class="lista-veiculos">
           <li>
-            <a href="#">
-              <img src="./icones/youtube.png" alt="youtube">
-            </a>
+            <div class="imagem-container">
+              <img src="./images/bmw-m4.jpg" alt="Sedan Luxo 2024">
+            </div>
+            <h3>Sedan Luxo 2024</h3>
+            <p>Sedan espaçoso e econômico, ideal para família. Disponível em várias cores.</p>
+            <button type="button">Agendar test drive</button>
           </li>
-      </ul>
+          <li>
+            <div class="imagem-container">
+              <img src="./images/nissan-frontier.jpg" alt="Puckp Up 2024">
+            </div>
+            <h3>Pick Up 2024</h3>
+            <p>Versátil para cidade e estrada. Conforto e desempenho em um só veículo.</p>
+            <button type="button">Agendar test drive</button>
+          </li>
+          <li>
+            <div class="imagem-container">
+              <img src="./images/honda-s2000.jpg" alt="Esportivo Anos 2000">
+            </div>
+            <h3>Honda S2000</h3>
+            <p>Ágil e divertido, reliquia dos anos 2000 perfeito para o dia a dia.</p>
+            <button type="button">Agendar test drive</button>
+          </li>
+          <li>
+            <div class="imagem-container">
+              <img src="./images/fusca.png" alt="Fusca 78">
+            </div>
+            <h3>Fusca 1300 1978</h3>
+            <p>Fusca classico atemporal pronto para qualquer adiversidade</p>
+            <button type="button">Agendar test drive</button>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 AutoMax Veículos | Todos os direitos reservados.</p>
     </div>
   </footer>
-  <script type="text/javascript" src="//code.jquery.com/jquery-3.7.1.min.js"></script>
-  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-3.4.1.js"></script>
-  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-  <script src="./js/jquery.mask.min.js"></script>
-  <script src="./js/jquery.validate.min.js"></script>
-  <script src="./js/messages_pt_BR.min.js"></script>
-  <script src="./main.js"></script>
 </body>
 </html>

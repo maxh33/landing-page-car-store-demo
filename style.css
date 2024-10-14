@@ -5,171 +5,196 @@
     font-family: 'Roboto', sans-serif;
 }
 
-html {
-    overflow-x: hidden;
+body {
+    background-color: #f5f5f5;
 }
 
 .container {
     max-width: 1024px;
     margin: 0 auto;
-    width: 100%;
-}
-
-header , footer {
-    background-color: #132972dc;
-    color: #fff;
-    padding-top: 16px;
+    padding: 0 20px;
 }
 
 header {
-    position: sticky;
-    top: 0;
-    left: 0;
-    z-index: 1;
+    background-color: #1c3f94;
+    color: #fff;
+    padding: 20px 0;
 }
 
-header > .container,
-footer > .container {
+header .container {
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 16px;
+}
+
+header h1 {
+    font-size: 24px;
+    margin: 0;
 }
 
 nav {
-    background-color: #235dc9;
-    padding: 16px 0;
-    display: none;
-}
-
-nav li {
-    list-style: none;
-    margin-right: 16px;
-    display: inline;
-    font-size: 18px;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
-nav li a {
-    text-decoration: none;
-    color: #fff;
-}
-.hamburgerMenu {
-    width: 32px;
-    cursor: pointer;
-}
-
-.hamburgerMenu span {
-    display: block;
-    height: 2px;
-    width: 100%;
-    background-color: #fff;
-    margin-bottom: 4px;
-}
-
-.containerFlex {
     display: flex;
+    align-items: center;
 }
 
-#aboutStore img {
-    max-width: 400px;
-    margin-right: 24px;
-} 
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li:first-child {
+    margin-left: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    line-height: 1;
+}
+
+main {
+    padding: 40px 0;
+}
 
 section {
-    padding: 48px 0;
+    margin-bottom: 40px;
 }
 
-section h2 {
-    margin-bottom: 16px;
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
 }
 
-.vehicleList {
-    flex-wrap: wrap;
+#sobre-a-loja .container {
+    display: flex;
+    align-items: center;
 }
 
-.vehicleList li {
+#sobre-a-loja img {
+    max-width: 50%;
+    margin-right: 40px;
+}
+
+.sobre-conteudo p {
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.lista-veiculos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
     list-style: none;
-    max-width: 30%;
-    margin-bottom: 24px;
 }
 
-.vehicleList li img {
+.lista-veiculos li {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.lista-veiculos img {
     max-width: 100%;
-    width: 400px;
-    height: 200px;
+    margin-bottom: 15px;
 }
 
-.vehicleList li h3 {
-    margin: 16px 0;
+.lista-veiculos h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
 }
 
-.centralItem {
-    margin: 0 5%;
+.lista-veiculos p {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.lista-veiculos .imagem-container {
+    position: relative;
+    width: 100%;
+    padding-top: 75%;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.lista-veiculos .imagem-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.lista-veiculos img {
+    max-width: 100%;
+    margin-bottom: 15px;
 }
 
 button {
-    background-color: #235dc9;
+    background-color: #1c3f94;
     color: #fff;
-    width: 100%;
     border: none;
-    display: block;
-    padding: 8px 0px;
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: bold;
-    font-style: italic;
-    border-radius: 6px;
-}
-
-.price{
-    font-size: 18px;
-    font-weight: bold;
-    margin: 16px 0;
-    display: block;
-}
-
-.price del {
-    color: #ccc;
+    padding: 10px 15px;
     font-size: 14px;
+    cursor: pointer;
+    border-radius: 3px;
 }
 
-.contactField {
-    margin-bottom: 16px;
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
 }
 
-.contactField label {
-    display: block;
-    font-weight: bold;
+@media (max-width: 1023px) {
+    #sobre-a-loja .container {
+        flex-direction: column;
+    }
+
+    #sobre-a-loja img {
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .lista-veiculos {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
-.contactField input,
-.contactField textarea {
-    width: 100%;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    display: block;
-}
+@media (max-width: 640px) {
+    header .container {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 50px;
+    }
 
-.contactField textarea {
-    resize: none;
-    height: 120px;
-}
+    nav {
+        margin-top: 10px;
+        align-self: flex-end
+    }
 
-form {
-    max-width: 360px;
-}
+    nav ul {
+        flex-direction: column;
+        margin-bottom: 0px;
+    }
 
-form button {
-    max-width: 120px;
-}
+    nav ul li {
+        margin: 5px 0;
+        margin-left: 0;;
+    }
 
-footer li {
-    list-style: none;
-    margin-left: 16px;
-}
-
-footer li img {
-    height: 32px;
+    .lista-veiculos {
+        grid-template-columns: 1fr;
+    }
 }
