@@ -22,12 +22,12 @@ header {
 }
 
 .header-container {
-        display: flex;
-        flex-direction: row; /* Manter os itens em linha */
-        align-items: center; /* Alinhar verticalmente ao centro */
-        justify-content: space-between; /* Distribuir espaço entre os itens */
-        padding-left: 10px;
-        padding-right: 10px;
+    display: flex;
+    flex-direction: row; 
+    align-items: center; 
+    justify-content: space-between;
+    margin-left: 5vh;
+    margin-right: 5vh;
     }
 
 header .container {
@@ -180,9 +180,9 @@ footer {
 @media (max-width: 1023px) {
     .header-container {
         display: flex;
-        flex-direction: row; /* Manter os itens em linha */
-        align-items: center; /* Alinhar verticalmente ao centro */
-        justify-content: space-between; /* Distribuir espaço entre os itens */
+        flex-direction: row; 
+        align-items: center; 
+        justify-content: space-between;
         padding-left: 10px;
         padding-right: 10px;
     }
@@ -205,9 +205,9 @@ footer {
 @media (max-width: 640px) {
     .header-container {
         display: flex;
-        flex-direction: row; /* Manter os itens em linha */
-        align-items: center; /* Alinhar verticalmente ao centro */
-        justify-content: space-between; /* Distribuir espaço entre os itens */
+        flex-direction: row;
+        align-items: center; 
+        justify-content: space-between; 
         padding-left: 10px;
         padding-right: 10px;
     }
